@@ -1,0 +1,16 @@
+@import "variables";
+@import "breakpoints";
+
+.container {
+    padding: 0 $standard_content_space_sm;
+
+    @include min-width-md {
+        padding: 0 $standard_content_space_md;
+    }
+
+    @include min-width-xl {
+        max-width: $max_content_width_xl;
+        padding: 0 $standard_content_space_xl;
+        margin: 0 auto;
+    }
+}
