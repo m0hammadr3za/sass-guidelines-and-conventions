@@ -9,7 +9,7 @@ export default function Navbar() {
             </div>
 
             <div className="navbar__logo">
-                <a href="/#">Mini Designes</a>
+                <a href="/#">Mini Designs</a>
             </div>
         </nav>
     );

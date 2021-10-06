@@ -1,2 +1,90 @@
 @import "variables";
 @import "breakpoints";
+
+.intro {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include min-width-md {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 50px;
+    }
+}
+
+.intro__info {
+    @include min-width-md {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.intro__info-text {
+    line-height: 1.4;
+    margin-bottom: 50px;
+}
+
+.intro__title {
+    font-size: 22px;
+    max-width: 280px;
+    margin-bottom: 15px;
+
+    @include min-width-xl {
+        font-size: 35px;
+        max-width: 350px;
+        margin-top: -5px;
+        margin-bottom: 30px;
+    }
+}
+
+.intro__title-break {
+    display: none;
+
+    @include min-width-xl {
+        display: block;
+    }
+}
+
+.intro__description {
+    font-size: 18px;
+    max-width: 200px;
+    opacity: 0.5;
+
+    @include min-width-xl {
+        font-size: 22px;
+        max-width: 250px;
+    }
+}
+
+.intro__cards-container {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include min-width-md {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    @include min-width-xl {
+        gap: 35px;
+    }
+}
+
+.intro__card {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+
+    @include min-width-md {
+        width: 200px;
+        height: 400px;
+        margin-bottom: 0;
+    }
+
+    @include min-width-xl {
+        width: 320px;
+        height: 520px;
+    }
+}

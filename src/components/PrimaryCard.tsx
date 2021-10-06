@@ -1,4 +1,3 @@
-import CoverImage from "./CoverImage";
 import "../styles/PrimaryCard.scss";
 
 interface PrimaryCardInterface {
@@ -12,9 +11,7 @@ export default function PrimaryCard(props: PrimaryCardInterface) {
 
     return (
         <div className="primary-card">
-            <div className="primary-card__image">
-                <CoverImage src={imageSrc} alt={title} />
-            </div>
+            <img className="primary-card__image" src={imageSrc} alt="title" />
             <div className="primary-card__shade" />
             <div className="primary-card__info">
                 <h1 className="primary-card__title">{title}</h1>
