@@ -1,8 +1,9 @@
 import { Fragment } from "react";
-import "./styles/App.scss";
 import Container from "./components/Container";
 import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
+import Popular from "./components/Popular";
+import "./styles/App.scss";
 
 export default function App() {
     return (
@@ -19,7 +20,11 @@ export default function App() {
                 </div>
             </header>
 
-            <main>{/* <Container></Container> */}</main>
+            <main>
+                <Container>
+                    <Popular />
+                </Container>
+            </main>
         </Fragment>
     );
 }

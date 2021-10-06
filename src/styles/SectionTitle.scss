@@ -1,0 +1,20 @@
+@import "variables";
+@import "breakpoints";
+
+.section-title__primary {
+    font-size: 22px;
+    margin-bottom: 8px;
+
+    @include min-width-xl {
+        font-size: 36px;
+    }
+}
+
+.section-title__secondary {
+    font-size: 18px;
+    opacity: 0.5;
+
+    @include min-width-xl {
+        font-size: 22px;
+    }
+}

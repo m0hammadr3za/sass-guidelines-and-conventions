@@ -4,6 +4,12 @@
     }
 }
 
+@mixin min-width-lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
 @mixin min-width-xl {
     @media (min-width: 1200px) {
         @content;

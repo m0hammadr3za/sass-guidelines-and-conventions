@@ -4,12 +4,18 @@
 .intro {
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 100px;
 
     @include min-width-md {
         flex-direction: row;
         justify-content: space-between;
         align-items: stretch;
         gap: 50px;
+        margin-bottom: 110px;
+    }
+
+    @include min-width-xl {
+        margin-bottom: 190px;
     }
 }
 
@@ -23,7 +29,7 @@
 
 .intro__info-text {
     line-height: 1.4;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .intro__title {
@@ -32,7 +38,7 @@
     margin-bottom: 15px;
 
     @include min-width-xl {
-        font-size: 35px;
+        font-size: 36px;
         max-width: 350px;
         margin-top: -5px;
         margin-bottom: 30px;
@@ -59,11 +65,8 @@
 }
 
 .intro__cards-container {
-    display: flex;
-    flex-direction: column-reverse;
-
     @include min-width-md {
-        flex-direction: row;
+        display: flex;
         gap: 20px;
     }
 
