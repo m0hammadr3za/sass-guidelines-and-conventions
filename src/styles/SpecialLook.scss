@@ -1,7 +1,7 @@
 @import "variables";
 @import "breakpoints";
 
-.popular {
+.special-look {
     margin-bottom: $section_space_sm;
 
     @include min-width-md {
@@ -13,7 +13,7 @@
     }
 }
 
-.popular__title {
+.special-look__title {
     margin-bottom: $section_title_space_sm;
 
     @include min-width-md {
@@ -29,17 +29,10 @@
     }
 }
 
-.popular__cards-container {
+.special-look__cards-container {
     @include min-width-md {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
         gap: $space_between_elements_md;
-    }
-
-    @include min-width-lg {
-        grid-template-rows: 1fr;
-        grid-template-columns: repeat(4, 1fr);
     }
 
     @include min-width-xl {
@@ -47,11 +40,40 @@
     }
 }
 
-.popular__card {
-    width: 100%;
+.special-look__card {
     margin-bottom: $space_between_elements_sm;
 
     @include min-width-md {
         margin-bottom: 0;
+    }
+
+    &:nth-child(1) {
+        @include min-width-md {
+            width: 33%;
+        }
+
+        @include min-width-lg {
+            width: 66%;
+        }
+    }
+
+    &:nth-child(2) {
+        @include min-width-md {
+            width: 33%;
+        }
+
+        @include min-width-lg {
+            width: 17%;
+        }
+    }
+
+    &:nth-child(3) {
+        @include min-width-md {
+            width: 33%;
+        }
+
+        @include min-width-lg {
+            width: 17%;
+        }
     }
 }

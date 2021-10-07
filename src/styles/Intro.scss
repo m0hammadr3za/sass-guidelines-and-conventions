@@ -4,18 +4,19 @@
 .intro {
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 100px;
+    margin-bottom: $section_space_sm;
 
     @include min-width-md {
         flex-direction: row;
         justify-content: space-between;
         align-items: stretch;
         gap: 50px;
-        margin-bottom: 110px;
+        padding-bottom: 10px;
+        margin-bottom: $section_space_md;
     }
 
     @include min-width-xl {
-        margin-bottom: 190px;
+        margin-bottom: $section_space_xl;
     }
 }
 

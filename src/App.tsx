@@ -3,6 +3,7 @@ import Container from "./components/Container";
 import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
 import Popular from "./components/Popular";
+import SpecialLook from "./components/SpecialLook";
 import "./styles/App.scss";
 
 export default function App() {
@@ -23,6 +24,8 @@ export default function App() {
             <main>
                 <Container>
                     <Popular />
+
+                    <SpecialLook />
                 </Container>
             </main>
         </Fragment>

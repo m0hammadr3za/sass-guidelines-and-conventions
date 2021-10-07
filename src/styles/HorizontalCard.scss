@@ -1,0 +1,34 @@
+@import "variables";
+@import "breakpoints";
+
+.horizontal-card__image {
+    width: 100%;
+    height: 500px;
+    margin-bottom: $space_between_card_elements_sm;
+
+    @include min-width-md {
+        height: 380px;
+        margin-bottom: $space_between_card_elements_md;
+    }
+
+    @include min-width-xl {
+        height: 460px;
+        margin-bottom: $space_between_card_elements_xl;
+    }
+}
+
+.horizontal-card__info {
+    @include min-width-md {
+        display: none;
+    }
+
+    @include min-width-lg {
+        display: block;
+    }
+}
+
+.horizontal-card__info--hide-on-large {
+    @include min-width-md {
+        display: none;
+    }
+}

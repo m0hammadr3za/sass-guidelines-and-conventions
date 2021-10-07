@@ -3,13 +3,13 @@
 
 .standard-card__image {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: $space_between_card_elements_sm;
 
     @include min-width-md {
-        margin-bottom: 10px;
+        margin-bottom: $space_between_card_elements_md;
     }
 
     @include min-width-xl {
-        margin-bottom: 22px;
+        margin-bottom: $space_between_card_elements_xl;
     }
 }
