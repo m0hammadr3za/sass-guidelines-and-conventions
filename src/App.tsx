@@ -5,6 +5,7 @@ import Intro from "./components/Intro";
 import Popular from "./components/Popular";
 import SpecialLook from "./components/SpecialLook";
 import "./styles/App.scss";
+import LimitedEdition from "./components/LimitedEdition";
 
 export default function App() {
     return (
@@ -26,6 +27,8 @@ export default function App() {
                     <Popular />
 
                     <SpecialLook />
+
+                    <LimitedEdition />
                 </Container>
             </main>
         </Fragment>

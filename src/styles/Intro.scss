@@ -79,7 +79,7 @@
 .intro__card {
     width: 100%;
     height: 150px;
-    margin-bottom: 20px;
+    margin-bottom: $standard_content_space_sm;
 
     @include min-width-md {
         width: 200px;

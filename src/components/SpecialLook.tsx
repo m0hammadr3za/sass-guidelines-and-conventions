@@ -36,7 +36,7 @@ export default function SpecialLook() {
                 {horizontalCards.map((data) => {
                     // Show card info only for first card in large screens
                     return (
-                        <a className="special-look__card" href="/#">
+                        <a className="special-look__card" href="/#" key={data.id}>
                             <HorizontalCard
                                 imageSrc={data.imageSrc}
                                 title={data.title}
