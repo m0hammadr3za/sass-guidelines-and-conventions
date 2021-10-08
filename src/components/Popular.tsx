@@ -7,7 +7,7 @@ import popularFrouthImage from "../assets/popular-fourth.jpg";
 import "../styles/Popular.scss";
 
 export default function Popular() {
-    // Mock data for cards
+    // Mock data
     const standardCards = [
         {
             id: 1,

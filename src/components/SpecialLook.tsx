@@ -6,6 +6,7 @@ import specialThirdImage from "../assets/special-third.jpg";
 import "../styles/SpecialLook.scss";
 
 export default function SpecialLook() {
+    // Mock data
     const horizontalCards = [
         {
             id: 1,

@@ -5,6 +5,7 @@ import secondIntroImage from "../assets/intro-second.jpg";
 import "../styles/Intro.scss";
 
 export default function Intro() {
+    // Mock data
     const primaryCards = [
         {
             id: 1,

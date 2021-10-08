@@ -7,6 +7,7 @@ import limitedFifthImage from "../assets/limited-fifth.jpg";
 import "../styles/LimitedEdition.scss";
 
 export default function LimitedEdition() {
+    // Mock data
     const wallpaperImages = [
         { id: 1, imageSrc: limitedFirstImage },
         { id: 2, imageSrc: limitedSecondImage },

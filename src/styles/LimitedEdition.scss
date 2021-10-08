@@ -65,6 +65,7 @@
 
     @include min-width-lg {
         max-width: 530px;
+        margin-bottom: 6px;
     }
 }
 
@@ -91,7 +92,7 @@
         margin-bottom: 0;
 
         @include min-width-xl {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
     }
 }

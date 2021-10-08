@@ -17,7 +17,10 @@ export default function HorizontalCard(props: HorizontalCardInterface) {
             <div className="horizontal-card__image">
                 <CoverImage src={imageSrc} alt={title} />
             </div>
-            <div className={`horizontal-card__info ${hideInfoOnLarge ? "horizontal-card__info--hide-on-large" : ""}`}>
+            <div
+                className={`horizontal-card__info ${hideInfoOnLarge ? "horizontal-card__info--hide-on-large" : ""}`}
+                data-testid="horizontal-card-info"
+            >
                 <CardInfo title={title} description={description} />
             </div>
         </div>
