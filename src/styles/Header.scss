@@ -1,0 +1,23 @@
+@import "variables";
+@import "breakpoints";
+
+.header {
+    position: relative;
+}
+
+.header__top-layer {
+    position: relative;
+}
+
+.header__colored-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 320px;
+    background-color: $light_grey;
+
+    @include min-width-xl {
+        height: 495px;
+    }
+}
