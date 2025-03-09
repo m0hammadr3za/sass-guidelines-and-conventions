@@ -1,16 +1,16 @@
-@import "variables";
-@import "breakpoints";
+@use "variables" as *;
+@use "breakpoints" as *;
 
 .standard-card__image {
-    display: block;
-    width: 100%;
-    margin-bottom: $space_between_card_elements_sm;
+  display: block;
+  width: 100%;
+  margin-bottom: $space_between_card_elements_sm;
 
-    @include min-width-md {
-        margin-bottom: $space_between_card_elements_md;
-    }
+  @include min-width-md {
+    margin-bottom: $space_between_card_elements_md;
+  }
 
-    @include min-width-xl {
-        margin-bottom: $space_between_card_elements_xl;
-    }
+  @include min-width-xl {
+    margin-bottom: $space_between_card_elements_xl;
+  }
 }

@@ -1,79 +1,79 @@
-@import "variables";
-@import "breakpoints";
+@use "variables" as *;
+@use "breakpoints" as *;
 
 .special-look {
-    margin-bottom: $section_space_sm;
+  margin-bottom: $section_space_sm;
 
-    @include min-width-md {
-        margin-bottom: $section_space_md;
-    }
+  @include min-width-md {
+    margin-bottom: $section_space_md;
+  }
 
-    @include min-width-xl {
-        margin-bottom: $section_space_xl;
-    }
+  @include min-width-xl {
+    margin-bottom: $section_space_xl;
+  }
 }
 
 .special-look__title {
-    margin-bottom: $section_title_space_sm;
+  margin-bottom: $section_title_space_sm;
 
-    @include min-width-md {
-        margin-bottom: $section_title_space_md;
-    }
+  @include min-width-md {
+    margin-bottom: $section_title_space_md;
+  }
 
-    @include min-width-lg {
-        margin-bottom: $section_title_space_lg;
-    }
+  @include min-width-lg {
+    margin-bottom: $section_title_space_lg;
+  }
 
-    @include min-width-xl {
-        margin-bottom: $section_title_space_xl;
-    }
+  @include min-width-xl {
+    margin-bottom: $section_title_space_xl;
+  }
 }
 
 .special-look__cards-container {
-    @include min-width-md {
-        display: flex;
-        gap: $space_between_elements_md;
-    }
+  @include min-width-md {
+    display: flex;
+    gap: $space_between_elements_md;
+  }
 
-    @include min-width-xl {
-        gap: $space_between_elements_xl;
-    }
+  @include min-width-xl {
+    gap: $space_between_elements_xl;
+  }
 }
 
 .special-look__card {
-    margin-bottom: $space_between_elements_sm;
+  margin-bottom: $space_between_elements_sm;
 
+  @include min-width-md {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(1) {
     @include min-width-md {
-        margin-bottom: 0;
+      width: 33%;
     }
 
-    &:nth-child(1) {
-        @include min-width-md {
-            width: 33%;
-        }
+    @include min-width-lg {
+      width: 66%;
+    }
+  }
 
-        @include min-width-lg {
-            width: 66%;
-        }
+  &:nth-child(2) {
+    @include min-width-md {
+      width: 33%;
     }
 
-    &:nth-child(2) {
-        @include min-width-md {
-            width: 33%;
-        }
+    @include min-width-lg {
+      width: 17%;
+    }
+  }
 
-        @include min-width-lg {
-            width: 17%;
-        }
+  &:nth-child(3) {
+    @include min-width-md {
+      width: 33%;
     }
 
-    &:nth-child(3) {
-        @include min-width-md {
-            width: 33%;
-        }
-
-        @include min-width-lg {
-            width: 17%;
-        }
+    @include min-width-lg {
+      width: 17%;
     }
+  }
 }

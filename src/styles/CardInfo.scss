@@ -1,16 +1,16 @@
-@import "variables";
-@import "breakpoints";
+@use "variables" as *;
+@use "breakpoints" as *;
 
 .card-info__title {
-    font-size: $card_title_font_size_sm;
-    margin-bottom: 5px;
+  font-size: $card_title_font_size_sm;
+  margin-bottom: 5px;
 
-    @include min-width-xl {
-        font-size: $card_title_font_size_xl;
-        margin-bottom: 7px;
-    }
+  @include min-width-xl {
+    font-size: $card_title_font_size_xl;
+    margin-bottom: 7px;
+  }
 }
 
 .card-info__description {
-    opacity: 0.5;
+  opacity: 0.5;
 }

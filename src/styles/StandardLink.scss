@@ -1,47 +1,47 @@
-@import "variables";
-@import "breakpoints";
+@use "variables" as *;
+@use "breakpoints" as *;
 
 .standard-link {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    @include min-width-xl {
-        font-size: 19px;
-    }
+  @include min-width-xl {
+    font-size: 19px;
+  }
 }
 
 .standard-link__icon {
-    position: relative;
-    padding: 5px;
-    margin-top: 1px;
-    margin-left: 8px;
+  position: relative;
+  padding: 5px;
+  margin-top: 1px;
+  margin-left: 8px;
 
-    @include min-width-xl {
-        margin-left: 11px;
-    }
+  @include min-width-xl {
+    margin-left: 11px;
+  }
 }
 
 .standard-link__icon-line {
-    position: absolute;
-    right: 0;
-    display: block;
-    width: 7px;
-    height: 1.8px;
-    background-color: $black;
-    transform-origin: right;
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 7px;
+  height: 1.8px;
+  background-color: $black;
+  transform-origin: right;
 
-    @include min-width-xl {
-        width: 9px;
-        height: 2px;
-    }
+  @include min-width-xl {
+    width: 9px;
+    height: 2px;
+  }
 }
 
 .standard-link__icon-line--top {
-    top: 4px;
-    transform: rotate(-45deg);
+  top: 4px;
+  transform: rotate(-45deg);
 }
 
 .standard-link__icon-line--bottom {
-    top: 5px;
-    transform: rotate(45deg);
+  top: 5px;
+  transform: rotate(45deg);
 }

@@ -1,57 +1,57 @@
-@import "variables";
-@import "breakpoints";
+@use "variables" as *;
+@use "breakpoints" as *;
 
 .popular {
-    margin-bottom: $section_space_sm;
+  margin-bottom: $section_space_sm;
 
-    @include min-width-md {
-        margin-bottom: $section_space_md;
-    }
+  @include min-width-md {
+    margin-bottom: $section_space_md;
+  }
 
-    @include min-width-xl {
-        margin-bottom: $section_space_xl;
-    }
+  @include min-width-xl {
+    margin-bottom: $section_space_xl;
+  }
 }
 
 .popular__title {
-    margin-bottom: $section_title_space_sm;
+  margin-bottom: $section_title_space_sm;
 
-    @include min-width-md {
-        margin-bottom: $section_title_space_md;
-    }
+  @include min-width-md {
+    margin-bottom: $section_title_space_md;
+  }
 
-    @include min-width-lg {
-        margin-bottom: $section_title_space_lg;
-    }
+  @include min-width-lg {
+    margin-bottom: $section_title_space_lg;
+  }
 
-    @include min-width-xl {
-        margin-bottom: $section_title_space_xl;
-    }
+  @include min-width-xl {
+    margin-bottom: $section_title_space_xl;
+  }
 }
 
 .popular__cards-container {
-    @include min-width-md {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        gap: $space_between_elements_md;
-    }
+  @include min-width-md {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: $space_between_elements_md;
+  }
 
-    @include min-width-lg {
-        grid-template-rows: 1fr;
-        grid-template-columns: repeat(4, 1fr);
-    }
+  @include min-width-lg {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-    @include min-width-xl {
-        gap: $space_between_elements_xl;
-    }
+  @include min-width-xl {
+    gap: $space_between_elements_xl;
+  }
 }
 
 .popular__card {
-    width: 100%;
-    margin-bottom: $space_between_elements_sm;
+  width: 100%;
+  margin-bottom: $space_between_elements_sm;
 
-    @include min-width-md {
-        margin-bottom: 0;
-    }
+  @include min-width-md {
+    margin-bottom: 0;
+  }
 }

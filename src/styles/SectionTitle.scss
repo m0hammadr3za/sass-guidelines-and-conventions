@@ -1,20 +1,20 @@
-@import "variables";
-@import "breakpoints";
+@use "variables" as *;
+@use "breakpoints" as *;
 
 .section-title__primary {
-    font-size: $section_primary_title_fs_sm;
-    margin-bottom: 8px;
+  font-size: $section_primary_title_fs_sm;
+  margin-bottom: 8px;
 
-    @include min-width-xl {
-        font-size: $section_primary_title_fs_xl;
-    }
+  @include min-width-xl {
+    font-size: $section_primary_title_fs_xl;
+  }
 }
 
 .section-title__secondary {
-    font-size: $section_secondary_title_fs_sm;
-    opacity: 0.5;
+  font-size: $section_secondary_title_fs_sm;
+  opacity: 0.5;
 
-    @include min-width-xl {
-        font-size: $section_secondary_title_fs_xl;
-    }
+  @include min-width-xl {
+    font-size: $section_secondary_title_fs_xl;
+  }
 }

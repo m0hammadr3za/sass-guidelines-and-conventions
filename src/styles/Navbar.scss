@@ -1,57 +1,57 @@
-@import "variables";
-@import "breakpoints";
+@use "variables" as *;
+@use "breakpoints" as *;
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: $standard_content_space_sm;
-    padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: $standard_content_space_sm;
+  padding-bottom: 30px;
 
-    @include min-width-md {
-        padding: 33px 0;
-    }
+  @include min-width-md {
+    padding: 33px 0;
+  }
 
-    @include min-width-xl {
-        padding: 55px 0;
-    }
+  @include min-width-xl {
+    padding: 55px 0;
+  }
 }
 
 .navbar__menu-icon {
-    padding: 5px 0;
+  padding: 5px 0;
 
-    @include min-width-md {
-        cursor: pointer;
-    }
+  @include min-width-md {
+    cursor: pointer;
+  }
 }
 
 .navbar__menu-icon-line {
-    display: block;
-    background-color: $black;
-    height: 2.2px;
+  display: block;
+  background-color: $black;
+  height: 2.2px;
 
-    @include min-width-xl {
-        height: 3px;
-    }
+  @include min-width-xl {
+    height: 3px;
+  }
 }
 
 .navbar__menu-icon-line--first {
-    width: 36px;
-    margin-bottom: 5px;
+  width: 36px;
+  margin-bottom: 5px;
 }
 
 .navbar__menu-icon-line--second {
-    width: 18px;
+  width: 18px;
 }
 
 .navbar__logo {
-    background-color: $black;
-    color: $light_grey;
-    padding: 2px 6px;
-    padding-bottom: 3px;
+  background-color: $black;
+  color: $light_grey;
+  padding: 2px 6px;
+  padding-bottom: 3px;
 
-    @include min-width-xl {
-        font-size: 18px;
-        padding: 3px 8px;
-    }
+  @include min-width-xl {
+    font-size: 18px;
+    padding: 3px 8px;
+  }
 }
